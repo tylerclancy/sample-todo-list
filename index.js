@@ -17,10 +17,13 @@ function App() {
       isCompleted: false,
     },
   ]);
+
   return (
     <>
       {todos.map((todo, i) => (
-        <div key={i}>{todo.text}</div>
+        <div className="todo" key={i}>
+          {todo.text}
+        </div>
       ))}
     </>
   );
