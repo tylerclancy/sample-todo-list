@@ -19,7 +19,7 @@ function App() {
   ]);
 
   const addTodo = text => {
-    const newTodos = [...todos, {text:value, isCompleted:false}];
+    const newTodos = [...todos, {text:text, isCompleted:false}];
     setTodos(newTodos);
   };
 
